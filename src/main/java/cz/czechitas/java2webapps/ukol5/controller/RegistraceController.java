@@ -9,15 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Random;
-
 /**
  * Kontroler obsluhující registraci účastníků dětského tábora.
  */
 @Controller
 @RequestMapping("")
 public class RegistraceController {
-    private final Random random = new Random();
 
     @GetMapping("")
     public ModelAndView formular() {

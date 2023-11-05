@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <label for="telefon class=" form-label">Telefon na rodiče</label>
+            <label for="telefon" class="form-label">Telefon na rodiče</label>
             <div>
                 [@spring.formInput path="form.telefon" /]
                 <div class="error">[@spring.showErrors "<br>"/]</div>
