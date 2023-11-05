@@ -1,19 +1,35 @@
 package cz.czechitas.java2webapps.ukol5.controller;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Objects;
 
+
 public class RegistraceForm {
 
+
+    @NotBlank
     private String jmeno;
 
+    @NotBlank
     private String prijmeni;
+
+    @Past
+    @NotNull
     private LocalDate datumNarozeni;
+
+    @NotBlank
     private String pohlavi;
 
+    @NotBlank
     private String turnus;
 
+    @Email
     private String email;
 
     private String telefon;
