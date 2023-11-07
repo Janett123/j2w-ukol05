@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <label for="datumNarozeni" class="form-label">Datum narození (ve formátu dd.mm.yy)</label>
+            <label for="datumNarozeni" class="form-label">Datum narození (ve formátu dd.mm.yyyy)</label>
             <div>
                 [@spring.formInput path="form.datumNarozeni" /]
                 <div class="error">[@spring.showErrors "<br>"/]</div>
